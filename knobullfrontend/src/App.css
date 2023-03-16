@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.App hr {
+  border-color: red;
+}
+
+.App h2 {
+  text-align:left;
+}
+
+
+.col-8 h2{
+  margin-bottom: 1em;
+}
