@@ -9,8 +9,10 @@ function App() {
     <div>
       <NavBar/>
       <div className="container App">  {/* use container from Bootstrap */}
-        <h1>Header</h1>
-        <h1>News Articles Go Here</h1>
+        <h1 class="display-4">Student News</h1>
+        <hr></hr>
+        {/*<h1 class="display-5">News Articles Go Here</h1>*/}
+
         <div className="row">
           <div className="col-8">
             <StudentCard></StudentCard>
