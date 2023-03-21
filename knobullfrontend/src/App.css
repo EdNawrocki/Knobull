@@ -49,3 +49,10 @@
 .col-8 h2{
   margin-bottom: 1em;
 }
+
+.social {
+  width: 10%;
+  height: 50%;
+  overflow: hidden;
+}
+

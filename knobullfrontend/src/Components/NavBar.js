@@ -13,6 +13,9 @@ function NavBar() {
                     <a class="nav-item nav-link" href="#">News</a>
                     <a class="nav-item nav-link" href="#">Blog</a>
                     <a class="nav-item nav-link" href="#">About Us</a>
+                    <a href="https://www.linkedin.com/company/knobull-inc/" target="_blank" className="nav-item nav-link" role="button">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </nav>
