@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -9,10 +9,10 @@ function NavBar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <Link to="/" class="nav-item nav-link active">Home <span class="sr-only">(current)</span></Link>
                     <a class="nav-item nav-link" href="#">News</a>
                     <a class="nav-item nav-link" href="#">Blog</a>
-                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <Link to="/About" class="nav-item nav-link">About Us</Link>
                     <a href="https://www.linkedin.com/company/knobull-inc/" target="_blank" className="nav-item nav-link" role="button">
                         LinkedIn
                     </a>
