@@ -32,8 +32,7 @@ export default function About() {
                         </div>
                 </div>
             </div>
-
-            <div className="w3-third w3-margin-bottom">
+            <div className="w3-third w3-margin-bdottom">
                 <div className="w3-card-4">
                     <img src={PlaceHolder} alt="Jane" style={{ width: '100%' }} />
                         <div className="w3-container">
