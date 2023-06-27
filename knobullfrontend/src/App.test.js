@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import App from './App';
@@ -12,34 +12,47 @@ function renderWithRouter(component) {
   );
 };
 
-// Test case: Verifies that the "Learn React" link is rendered
 test('renders learn react link', () => {
   renderWithRouter(<App />);
 
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const learnReactLink = screen.getByText(/learn react/i);
+  expect(learnReactLink).toBeInTheDocument();
 });
 
-// Test case: Verifies that the navbar is rendered
 test('renders navbar', () => {
   renderWithRouter(<App />);
 
-  const navbarElement = screen.getByRole('navigation');
-  expect(navbarElement).toBeInTheDocument();
+  const navbar = screen.getByRole('navigation');
+  expect(navbar).toBeInTheDocument();
 });
 
-// Test case: Verifies that the Student News heading is rendered
 test('renders Student News heading', () => {
   renderWithRouter(<App />);
 
-  const studentNewsElement = screen.getByText('Student News');
-  expect(studentNewsElement).toBeInTheDocument();
+  const studentNewsHeading = screen.getByText('Student News');
+  expect(studentNewsHeading).toBeInTheDocument();
 });
 
-// Test case: Verifies that the The Latest heading is rendered
 test('renders The Latest heading', () => {
   renderWithRouter(<App />);
 
-  const theLatestElement = screen.getByText('The Latest');
-  expect(theLatestElement).toBeInTheDocument();
+  const theLatestHeading = screen.getByText('The Latest');
+  expect(theLatestHeading).toBeInTheDocument();
+});
+
+test('navigates to About Us page when "About Us" link is clicked', () => {
+  renderWithRouter(<App />);
+
+  const aboutUsLink = screen.getByText('About Us');
+  fireEvent.click(aboutUsLink);
+  expect(window.location.pathname).toBe('/About');
+});
+
+test('navigates to LinkedIn page when "LinkedIn" link is clicked', () => {
+  renderWithRouter(<App />);
+
+  const linkedInLink = screen.getByText('LinkedIn');
+  const linkedInHref = linkedInLink.getAttribute('href');
+  fireEvent.click(linkedInLink);
+  expect(linkedInHref).toBe('https://www.linkedin.com/company/knobull-inc/');
 });
