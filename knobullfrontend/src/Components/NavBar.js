@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img style={{width:"50px"}} src="https://media.licdn.com/dms/image/C560BAQHxeMRytUU5xw/company-logo_200_200/0/1601089066813?e=2147483647&v=beta&t=ajOmaM3gWC9JeOQZbKk59r0GtfZ8Gzv1cGyVpEd3534"/></a>
+            <a class="navbar-brand" href="#">
+                <img style={{width:"50px"}} src="https://media.licdn.com/dms/image/C560BAQHxeMRytUU5xw/company-logo_200_200/0/1601089066813?e=2147483647&v=beta&t=ajOmaM3gWC9JeOQZbKk59r0GtfZ8Gzv1cGyVpEd3534" alt="Knobull Logo"/>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
