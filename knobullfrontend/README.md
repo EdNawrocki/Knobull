@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+The student news page is a platform designed to provide students with easy access to online news articles. It serves as a simplified version of the US News system, allowing users to browse and read articles of interest on both mobile and desktop devices. The app offers a user-friendly interface and features essential functionalities to article browsing and article reading.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -38,6 +42,49 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Components and Hierarchy
+
+### App Component Hierarchy
+
+    • NavBar Component
+    • Home Component
+        • StudentCard Component
+        • ListMediaObjects Component
+            • MediaObject Component
+    • About Component
+
+### NavBar Component
+
+Purpose: Renders a navigation bar, providing links to different sections and external resources.
+
+### Home Component
+
+Purpose: Represents the main page of the student news article website.
+
+### StudentCard Component
+
+Purpose: Displays a student card with information and an image.
+
+### ListMediaObject Component
+
+Purpose: Displays a list of five media objects
+
+### MediaObject Component
+
+Purpose: Displays a media object with a heading, description, and an accompanying image.
+
+### About Component
+
+Purpose: Represents the ‘About Us’ page to show the Knobull team
+
+## Testing
+
+The tests for the Student News page were created using the ‘React Testing Library’ and the ‘React Router Dom’ library. The current tests focus on rendering components and verifying the presence of specific elements, while also testing navigation functionality.
+
+### How To Run Tests
+
+To run the tests, simply enter in the `npm test` command.
 
 ## Learn More
 
