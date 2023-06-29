@@ -80,11 +80,13 @@ Purpose: Represents the ‘About Us’ page to show the Knobull team
 
 ## Testing
 
-The tests for the Student News page were created using the ‘React Testing Library’ and the ‘React Router Dom’ library. The current tests focus on rendering components and verifying the presence of specific elements, while also testing navigation functionality.
+The tests for the Student News page are implemented using the 'React Testing Library' and the 'React Router Dom' library. These tests focus on rendering components, verifying the presence of specific elements, and testing navigation functionality.
 
-### How To Run Tests
+### Running Tests
 
-To run the tests, simply enter in the `npm test` command.
+1. Open your terminal and navigate to the 'knobullfrontend' directory.
+2. Enter in the `npm test` command.
+This command will start executing the tests.
 
 ## Learn More
 
